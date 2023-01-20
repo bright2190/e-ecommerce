@@ -56,6 +56,19 @@ body {
         font-size: 14px;
         color: var(--sidebar_color);
         padding: 5px 10px;
+        position: relative;
+        &.active{
+          background-color: rgb(238,242,253) !important;
+          &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: royalblue;
+          }
+        }
         sup {
           position: absolute;
           background-color: royalblue;

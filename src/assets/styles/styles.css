@@ -53,6 +53,19 @@ body {
   font-size: 14px;
   color: var(--sidebar_color);
   padding: 5px 10px;
+  position: relative;
+}
+.admin_container .admin_sidebar li a.active {
+  background-color: rgb(238, 242, 253) !important;
+}
+.admin_container .admin_sidebar li a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: royalblue;
 }
 .admin_container .admin_sidebar li a sup {
   position: absolute;
