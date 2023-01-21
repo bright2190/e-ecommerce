@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Accordion } from '@mantine/core';
-import { IconHome2, IconBell, IconBasket, IconSquarePlus, IconApps, IconUsers, IconChevronRight, IconInbox, IconMailForward, IconServerCog } from '@tabler/icons';
+import { IconHome2, IconBell, IconBasket, IconSquarePlus, IconApps, IconUsers, IconChevronRight, IconInbox, IconMailForward, IconServerCog, IconShoppingBag } from '@tabler/icons';
 import SidebarNavLink from './SidebarNavLink';
 
 const Sidebar: React.FC = ({ }) => {
-    const location = useLocation() 
+    const location = useLocation()
     return (
         <>
             <nav className='admin_sidebar'>
@@ -15,16 +15,19 @@ const Sidebar: React.FC = ({ }) => {
                 <ul>
                     <menu>
                         <li>
-                            <SidebarNavLink className={location.pathname !=="/admin" ? "inactive":"active"} path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"gray"} variant={"transparent"} />
+                            <SidebarNavLink className={location.pathname !== "/admin" ? "inactive" : "active"} path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"gray"} variant={"transparent"} />
                         </li>
                         <li>
                             <SidebarNavLink path={"/admin/notifications"} icon={<IconBell />} name={"Notifications"} color={"gray"} variant={"transparent"} />
+                        </li>
+                        <li>
+                            <SidebarNavLink path={"/admin/orders"} icon={<IconShoppingBag />} name={"Orders"} color={"gray"} variant={"transparent"} />
                         </li>
                     </menu>
 
                     <menu>
                         <li>
-                            <Accordion 
+                            <Accordion
                                 chevron={<IconChevronRight color={"gray"} size={18} />}
                                 styles={{
                                     chevron: {
@@ -36,9 +39,9 @@ const Sidebar: React.FC = ({ }) => {
                                 <Accordion.Item value="products">
                                     <Accordion.Control><h3>Products</h3></Accordion.Control>
                                     <Accordion.Panel>
-                                        <SidebarNavLink path={"/admin/products"} icon={<IconBasket />} name={"Products"} color={"blue"} variant={"light"} />
-                                        <SidebarNavLink path={"/admin/product/add-product"} icon={<IconSquarePlus />} name={"Add product"} color={"orange"} variant={"light"} />
-                                        <SidebarNavLink path={"/admin/product/category"} icon={<IconApps />} name={"Category"} color={"violet"} variant={"light"} />
+                                        <SidebarNavLink className={location.pathname !== "/admin/products" ? "inactive" : "active"} path={"/admin/products"} icon={<IconBasket />} name={"Products"} color={"blue"} variant={"light"} />
+                                        <SidebarNavLink path={"/admin/products/add-product"} icon={<IconSquarePlus />} name={"Add product"} color={"orange"} variant={"light"} />
+                                        <SidebarNavLink path={"/admin/products/category"} icon={<IconApps />} name={"Category"} color={"violet"} variant={"light"} />
                                     </Accordion.Panel>
                                 </Accordion.Item>
 
