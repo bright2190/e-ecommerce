@@ -12,7 +12,9 @@
 :root {
   --sidebar_border: rgb(237, 237, 237);
   --sidebar_color: rgb(112, 112, 112);
+  --sidebar_active:rgb(238, 242, 253);
   --background_color: #f8f9fa;
+  --container_color:#ffffff;
   --background_color: rgb(249, 250, 251);
   --sidebar_hover: rgb(248, 249, 250);
   --border: rgb(237, 237, 237);
@@ -20,8 +22,20 @@
   --lighter_color:gray;
 }
 
+[data-theme=dark] {
+  --sidebar_border: rgb(55,59,65);
+  --sidebar_color: rgb(213, 213, 213);
+  --background_color: rgb(24,25,26);
+  --container_color:rgb(37,38,43);
+  --sidebar_hover: rgb(41, 42, 53);
+  --sidebar_active:rgb(57, 59, 72);
+  --border: rgb(55,59,65);
+  --color:rgb(230, 230, 230);
+  --lighter_color:rgb(206, 206, 206);
+}
+
 body {
-  background-color: white;
+  background-color: var(--container_color);
 }
 
 .admin_container {
@@ -34,7 +48,7 @@ body {
   color: var(--color);
 }
 .admin_container .admin_sidebar {
-  background-color: white;
+  background-color: var(--container_color);
   height: 100vh;
   width: 300px;
   min-width: 300px;
@@ -68,10 +82,11 @@ body {
   font-size: 14px;
   color: var(--sidebar_color);
   padding: 5px 10px;
+  font-weight: 500;
   position: relative;
 }
 .admin_container .admin_sidebar li a.active:not(.inactive) {
-  background-color: rgb(238, 242, 253) !important;
+  background-color: var(--sidebar_active) !important;
 }
 .admin_container .admin_sidebar li a.active:not(.inactive)::before {
   content: "";
@@ -85,7 +100,7 @@ body {
 .admin_container .admin_sidebar li a sup {
   position: absolute;
   background-color: royalblue;
-  color: white;
+  color: var(--container_color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,7 +122,7 @@ body {
   padding-right: 0;
 }
 .admin_container .top_nav {
-  background-color: white;
+  background-color: var(--container_color);
   border-bottom: 1px solid var(--border);
   height: 50px;
   display: flex;
@@ -139,7 +154,7 @@ body {
   margin-bottom: 30px;
 }
 .admin_container .home_container .overview_container .card {
-  background-color: white;
+  background-color: var(--container_color);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -166,7 +181,7 @@ body {
   padding: 20px;
 }
 .admin_container .add_product {
-  background-color: white;
+  background-color: var(--container_color);
   padding: 20px;
   min-height: 100vh;
 }
@@ -175,7 +190,7 @@ body {
 }
 .admin_container .order_content .table_container {
   padding: 20px;
-  background-color: white;
+  background-color: var(--container_color);
   border: 1px solid var(--border);
   border-radius: 5px;
 }
