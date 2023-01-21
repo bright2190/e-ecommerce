@@ -41,13 +41,10 @@ const Order: React.FC = () => {
 
                 <Menu width={200} withArrow position='bottom-end' shadow="md">
                     <Menu.Target>
-                        <Button radius={50} size={"xs"} variant='white'>
-                            <ActionIcon size={20} color={"gray"}>
-                                <IconDotsVertical />
-                            </ActionIcon>
-                        </Button>
+                        <ActionIcon size={20} color={"gray"}>
+                            <IconDotsVertical />
+                        </ActionIcon>
                     </Menu.Target>
-
                     <Menu.Dropdown>
                         <Menu.Item onClick={() => console.log(id)} icon={<IconChartCandle size={18} />}>
                             Update status
