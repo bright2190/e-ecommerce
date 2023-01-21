@@ -7,12 +7,13 @@ interface SidebarNavLinkProps {
     variant:"gradient" | "subtle" | "filled" | "outline" | "light" | "default" | "transparent" | undefined;
     icon:React.ReactElement;
     name:string;
+    className?:string
 }
 
-const SidebarNavLink: React.FC<SidebarNavLinkProps> = ({color,name,path,icon,variant }) => {
+const SidebarNavLink: React.FC<SidebarNavLinkProps> = ({color,name,path,icon,variant,className }) => {
     return (
         <>
-            <NavLink to={path} >
+            <NavLink to={path} className={className}>
                 <ActionIcon size={20} color={color} variant={variant}>
                     {icon}
                 </ActionIcon>
