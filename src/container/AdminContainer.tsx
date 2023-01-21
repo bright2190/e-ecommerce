@@ -7,7 +7,7 @@ const AdminContainer: React.FC = () => {
         <>
             <div className="admin_container">
                 <Sidebar />
-                <div>
+                <div style={{width:"100%"}}>
                     <Outlet />
                 </div>
             </div>
