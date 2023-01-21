@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import AdminContainer from "./container/AdminContainer";
-import { AddProduct, Category, Home, Orders, Products } from "./pages";
+import { AddProduct, Category, Home, Notification, Orders, Products } from "./pages";
 function App() {
   return (
     <Router>
@@ -12,6 +12,7 @@ function App() {
               <Route path="/admin/products/category" element={<Category />}></Route>
               <Route path="/admin/products/add-product" element={<AddProduct />}></Route>
               <Route path="/admin/orders" element={<Orders />}></Route>
+              <Route path="/admin/notifications" element={<Notification />}></Route>
             </Route>
         </Routes>
       </div>
