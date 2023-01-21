@@ -1,17 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Accordion } from '@mantine/core';
 import { IconHome2, IconBell, IconBasket, IconSquarePlus, IconApps, IconUsers, IconChevronRight, IconInbox, IconMailForward, IconServerCog } from '@tabler/icons';
 import SidebarNavLink from './SidebarNavLink';
 
 const Sidebar: React.FC = ({ }) => {
+    const location = useLocation() 
     return (
         <>
             <nav className='admin_sidebar'>
+                <div className='logo'>
+                    <h2>Matty</h2>
+                </div>
                 <ul>
                     <menu>
                         <li>
-                            <SidebarNavLink path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"gray"} variant={"transparent"} />
+                            <SidebarNavLink className={location.pathname !=="/admin" ? "inactive":"active"} path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"gray"} variant={"transparent"} />
                         </li>
                         <li>
                             <SidebarNavLink path={"/admin/notifications"} icon={<IconBell />} name={"Notifications"} color={"gray"} variant={"transparent"} />
