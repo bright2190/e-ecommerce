@@ -10,7 +10,7 @@ const Sidebar: React.FC = ({ }) => {
         <>
             <nav className='admin_sidebar'>
                 <div className='logo'>
-                    <h2>Matty</h2>
+                    <h2>👗Matty</h2>
                 </div>
                 <ul>
                     <menu>
