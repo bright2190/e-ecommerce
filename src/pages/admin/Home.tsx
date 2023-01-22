@@ -66,6 +66,7 @@ const Home: React.FC = () => {
                     <OverviewCard value={"100"} icon={<IconShoppingCart size={25} />} title={"Total Orders"} color={'orange'} />
                     <OverviewCard value={"300"} icon={<IconHanger2 size={25} />} title={"Total Products"} color={'violet'} />
                     <OverviewCard value={"700"} icon={<IconUsers size={25} />} title={"Total Users"} color={'teal'} />
+                    <OverviewCard value={"700"} icon={<IconUsers size={25} />} title={"Total Users"} color={'teal'} />
                 </div>
 
                 <div className='order_content'>
