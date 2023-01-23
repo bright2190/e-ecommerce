@@ -23,7 +23,7 @@
   --sidebar_background_color:rgb(33,38,42);
   --sidebar_logo_color:white;
   --sidebar_icon_background:rgb(54, 63, 69);
-  --background_color: #f3f3f3;
+  --background_color: #f9f9f9;
   --container_color: #ffffff;
   --border: rgb(237, 237, 237);
   --color: rgb(53, 53, 53);
@@ -229,17 +229,65 @@ body {
 }
 
 .discount_sales {
-  padding: 0px 40px;
+  padding: 0px 5%;
+  margin-top: 70px;
 }
-
-.product_container {
+.discount_sales .discount_container {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border: 1px solid whitesmoke;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 13px;
+}
+.discount_sales .product_container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
-.product_container .card img {
+.discount_sales .product_container .card {
+  position: relative;
+}
+.discount_sales .product_container .card img {
   width: 100%;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero_carousel_content {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.hero_carousel_content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero_carousel_content .details_content {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  background-color: rgba(87, 87, 87, 0.15);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+.hero_carousel_content .details_content h2 {
+  z-index: 2;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
