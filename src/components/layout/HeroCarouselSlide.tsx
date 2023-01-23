@@ -1,5 +1,5 @@
 import { Carousel } from '@mantine/carousel';
-import { Button, Flex, Image } from '@mantine/core';
+import { Button, Flex, Image, BackgroundImage, Box } from '@mantine/core';
 import React from 'react';
 
 interface HeroCarouselSlideProps {
@@ -10,19 +10,14 @@ interface HeroCarouselSlideProps {
 const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({ name, img }) => {
     return (
         <>
-            <Carousel.Slide p={30} >
-                <Flex
-                    gap={40}
-                    align={"center"}
-                >
-                    <Image radius={10} width={500} height={400} src={img} alt="" />
-                    <div>
-                        <h1
-                            style={{ fontSize: "50px" }}
-                        >{name}</h1>
-                        <Button color={"teal"} variant={"light"} radius={10} size={"xl"} mt={20}>Shop now</Button>
+            <Carousel.Slide p={5}>
+                <div className='hero_carousel_content'>
+                    <img src={img} alt="" />
+                    <div className='details_content'>
+                    <h2>{name}</h2>
+                    <Button size={"md"} color={"teal"} variant={"filled"}>Shop now</Button>
                     </div>
-                </Flex>
+                </div>
             </Carousel.Slide>
         </>
     );
