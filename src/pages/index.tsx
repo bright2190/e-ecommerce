@@ -9,6 +9,7 @@ import ProductPage from "./clients/ProductPage";
 import Login from "./auth/Login";
 import SignUp from "./auth/SignUp";
 import AdminLogin from "./auth/AdminLogin";
+import ForgotPassword from "./auth/ForgotPassword";
 
 
-export { Home, Products, Orders, AddProduct, Category, Notification, HomePage, ProductPage, Login, SignUp,AdminLogin }
+export { Home, Products, Orders, AddProduct, Category, Notification, HomePage, ProductPage, Login, SignUp,AdminLogin,ForgotPassword }

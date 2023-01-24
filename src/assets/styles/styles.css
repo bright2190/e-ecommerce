@@ -403,7 +403,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
+}
+.auth_container .auth_nav {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
 }
 
 .auth_content {

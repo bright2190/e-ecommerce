@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import AdminContainer from "./container/AdminContainer";
-import { AddProduct, AdminLogin, Category, Home, HomePage, Login, Notification, Orders, ProductPage, Products, SignUp } from "./pages";
+import { AddProduct, AdminLogin, Category, ForgotPassword, Home, HomePage, Login, Notification, Orders, ProductPage, Products, SignUp } from "./pages";
 import StoreContainer from "./container/StoreContainer";
 import AuthContainer from "./container/AuthContainer";
 function App() {
@@ -16,7 +16,9 @@ function App() {
           <Route path="/auth" element={<AuthContainer />}>
               <Route  path="/auth/sign-up" element={<SignUp />}></Route>
               <Route  path="/auth/sign-in" element={<Login />}></Route>
+              
               <Route  path="/auth/admin" element={<AdminLogin />}></Route>
+              <Route  path="/auth/forgot-password" element={<ForgotPassword />}></Route>
           </Route>
          
             <Route path="/admin" element={<AdminContainer />}>

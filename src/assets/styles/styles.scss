@@ -403,7 +403,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
+  .auth_nav{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
 }
 
 .auth_content {
@@ -422,6 +428,7 @@ footer {
   h1 {
     margin-bottom: 30px;
     font-size: 25px;
+
   }
   label {
     margin-bottom: 5px;
