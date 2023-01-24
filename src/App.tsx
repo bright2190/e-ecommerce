@@ -1,14 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import AdminContainer from "./container/AdminContainer";
-import { AddProduct, Category, Home, HomePage, Notification, Orders, Products } from "./pages";
+import { AddProduct, Category, Home, HomePage, Notification, Orders, ProductPage, Products } from "./pages";
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage />}>
-
-          </Route>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path={`/products/:product`} element={<ProductPage />}></Route>
             <Route path="/admin" element={<AdminContainer />}>
               <Route index element={<Home />}></Route>
               <Route path="/admin/products" element={<Products />}></Route>
