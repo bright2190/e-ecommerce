@@ -6,6 +6,9 @@ import Products from "./admin/Products";
 import Notification from "./admin/Notification";
 import HomePage from "./clients/HomePage";
 import ProductPage from "./clients/ProductPage";
+import Login from "./auth/Login";
+import SignUp from "./auth/SignUp";
+import AdminLogin from "./auth/AdminLogin";
 
 
-export { Home, Products, Orders, AddProduct, Category, Notification, HomePage, ProductPage }
+export { Home, Products, Orders, AddProduct, Category, Notification, HomePage, ProductPage, Login, SignUp,AdminLogin }
