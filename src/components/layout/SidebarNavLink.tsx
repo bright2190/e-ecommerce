@@ -14,7 +14,7 @@ const SidebarNavLink: React.FC<SidebarNavLinkProps> = ({color,name,path,icon,var
     return (
         <>
             <NavLink to={path} className={className}>
-                <ActionIcon size={20} color={color} variant={variant}>
+                <ActionIcon size={21} color={color} variant={variant}>
                     {icon}
                 </ActionIcon>
                 <span>{name}</span>

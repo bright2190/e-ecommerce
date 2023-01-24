@@ -6,7 +6,7 @@ interface StoreContainerProps {
 
 }
 
-const StoreContainer: React.FC<StoreContainerProps> = ({ }) => {
+const StoreContainer: React.FC<StoreContainerProps> = () => {
     return (
         <>
             <div>

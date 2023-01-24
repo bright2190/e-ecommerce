@@ -15,13 +15,13 @@ const Sidebar: React.FC = ({ }) => {
                 <ul>
                     <menu>
                         <li>
-                            <SidebarNavLink className={location.pathname !== "/admin" ? "inactive" : "active"} path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"gray"} variant={"transparent"} />
+                            <SidebarNavLink className={location.pathname !== "/admin" ? "inactive" : "active"} path={"/admin"} icon={<IconHome2 />} name={"Home"} color={"default"} variant={"transparent"} />
                         </li>
                         <li>
-                            <SidebarNavLink path={"/admin/notifications"} icon={<IconBell />} name={"Notifications"} color={"gray"} variant={"transparent"} />
+                            <SidebarNavLink path={"/admin/notifications"} icon={<IconBell />} name={"Notifications"} color={"default"} variant={"transparent"} />
                         </li>
                         <li>
-                            <SidebarNavLink path={"/admin/orders"} icon={<IconShoppingBag />} name={"Orders"} color={"gray"} variant={"transparent"} />
+                            <SidebarNavLink path={"/admin/orders"} icon={<IconShoppingBag />} name={"Orders"} color={"default"} variant={"transparent"} />
                         </li>
                     </menu>
 
