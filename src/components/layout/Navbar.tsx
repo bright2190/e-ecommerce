@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     return (
         <>
             <nav className='homepage_nav'>
-                <a href="#"><h1>👗Matty</h1></a>
+                <a href="#"><h1>BennyBags & Wears</h1></a>
 
                 <Flex align={"center"} gap={20}>
                     <Button color={"teal"}>Sign up</Button>
