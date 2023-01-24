@@ -5,6 +5,7 @@ import Orders from "./admin/Orders";
 import Products from "./admin/Products";
 import Notification from "./admin/Notification";
 import HomePage from "./clients/HomePage";
+import ProductPage from "./clients/ProductPage";
 
 
-export { Home, Products, Orders, AddProduct, Category, Notification, HomePage }
+export { Home, Products, Orders, AddProduct, Category, Notification, HomePage, ProductPage }
