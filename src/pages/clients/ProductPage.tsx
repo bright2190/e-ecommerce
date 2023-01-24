@@ -7,7 +7,6 @@ import { IconHeart } from '@tabler/icons';
 const ProductPage: React.FC = () => {
     return (
         <>
-            <Navbar />
             <div className={"item_container"}>
                 <div>
                     <img src="https://ae01.alicdn.com/kf/S12da40cca04f44d5b975a994cb5f0e395/High-Street-Graffiti-Bear-Print-Men-s-Fleece-Hoodie-Retro-Autumn-Casual-Pullover-Hooded-Sweatshirts-Hip.jpg_Q90.jpg_.webp" alt="" />

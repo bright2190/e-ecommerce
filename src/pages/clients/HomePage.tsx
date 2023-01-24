@@ -6,7 +6,6 @@ import { IconArrowRight } from '@tabler/icons';
 const HomePage: React.FC = () => {
     return (
         <>
-            <Navbar />
             <Carousel
                 withIndicators
                 height={500}
